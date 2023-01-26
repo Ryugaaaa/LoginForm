@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "CustomFont";
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("../fonts/Poppins-Light.ttf");
+}
+
+.page {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover {
+  background-color: #f8f8f8;
+  width: 811px;
+  height: 190px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  /* flex-direction: column; */
+}
+
+.title {
+  font-size: 10px;
+  text-align: left;
+  /* padding: 0 0 80px 12px; */
+  color: blue;
+}
+
+.inputs {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.room-input {
+  width: 100%;
+  max-width: 260px;
+  height: 60px;
+  padding: 0 0 0 10px;
+  border-color: #ebebeb;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.submit-input {
+  width: 100%;
+  max-width: 260px;
+  height: 60px;
+  background-color: #5863f8;
+  border-style: none;
+  color: white;
+}
+.submit-input:hover {
+  background-color: #8e95f7;
+}
