@@ -1,5 +1,5 @@
 import React from "react";
-import "./loginform.css";
+import "./Loginform.css";
 
 const LoginForm = () => {
   return (
@@ -9,14 +9,14 @@ const LoginForm = () => {
           <h1 className="title">Room</h1>
           <div className="inputs">
             {/* <label> */}
-            <input
-              label="beka"
-              className="room-input"
-              type="text"
-              placeholder="rooms"
-            />
+            <input className="room-input" type="text" placeholder="rooms" />
             {/* </label> */}
-            <button className="submit-input" type="submit" value="submit">
+            <button
+              onClick={myFunction}
+              className="submit-input"
+              type="submit"
+              value="submit"
+            >
               Submit
             </button>
             {/* <div className="Icon"></div> */}
@@ -25,6 +25,10 @@ const LoginForm = () => {
       </div>
     </div>
   );
+
+  function myFunction() {
+    alert("No Rooms Free");
+  }
 };
 
 export default LoginForm;
